@@ -1,9 +1,15 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Header from "./components/Header";
 
 function App() {
   return(
-  <h1 className="">Hola React + TypeScript + Vite</h1>
+    <BrowserRouter>
+      <Header/>
+      <Routes>
+        <Route path="/"></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
